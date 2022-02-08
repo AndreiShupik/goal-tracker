@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root {
+    --languid-lavender: #e5d4edff;
+    --violet-blue-crayola: #6d72c3ff;
+    --plump-purple: #5941a9ff;
+    --dark-liver: #514f59ff;
+    --dark-purple: #1d1128ff;
+}
+
+
+/*Reset input settings----------------------------------------*/
+
+input {
+    all: unset;
+}
+
+
+/*Configurate default Chrome styles----------------------------------------*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #E5C8EC inset !important;
+    -webkit-text-fill-color: #6D659B !important;
+}
+
+body {
+    font-family: Roboto;
+    max-width: 1440;
+    min-height: 1024;
+    background-color: #E5D4ED;
+}
+
+h1 {
+    color: #6D72C3;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 84px;
+    margin-left: 85px;
+}
+
+.start {
+    margin-bottom: 35px;
+    text-align: center;
+    color: #6D659B;
+    margin-top: 130px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+form {
+    max-width: 340px;
+    margin: 0px auto 15px auto;
+    /*text-align: center;*/
+}
+
+form .form__top {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form__top .form__top__login {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+form .form__middle .form__middle__password {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.error {
+    display: block;
+    max-width: 225px;
+    margin: 0px auto 5px 115px;
+    color: #fd101d;
+    text-align: left;
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    color: #6d72c3;
+    font-size: 20px;
+}
+
+input {
+    background-color: #E5C8EC;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    padding-left: 35px;
+    color: #6D659B;
+}
+
+
+/*input:focus {
+    background-color: #E5C8EC;
+    outline: none;
+    color: #6D659B;
+}*/
+
+.form__top__login__icon {
+    top: 2px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 10px;
+    background: url(../icons/user1.svg) 0px 0px no-repeat;
+}
+
+.form__middle__password__icon {
+    top: 0px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 8px;
+    background: url(../icons/lock1.svg) 0 0px no-repeat;
+}
+
+.submit {
+    display: block;
+    text-align: center;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.submit button {
+    padding: 0;
+    border: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #6D659B;
+    color: #fff;
+}
+
+.create-new-account {
+    display: block;
+    width: 450px;
+    text-align: center;
+}
+
+.create-new-account a {
+    font-size: 21px;
+}
+
+
+/*form {
+    max-width: 340px;
+    margin: 0px auto 15px auto;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.error {
+    display: block;
+    max-width: 225px;
+    margin: 0px auto 5px 115px;
+    color: #fd101d;
+    text-align: left;
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    color: #6d72c3;
+    font-size: 20px;
+}
+
+input {
+    background-color: #E5C8EC;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 190px;
+    font-size: 17px;
+    padding-left: 35px;
+    color: #6D659B;
+}
+
+.login-icon {
+    top: 2px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 10px;
+    background: url(../icons/user1.svg) 0px 0px no-repeat;
+}
+
+.password-icon {
+    top: 0px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 8px;
+    background: url(../icons/lock1.svg) 0 0px no-repeat;
+}
+
+.test {
+    display: block;
+    text-align: center;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.test button {
+    padding: 0;
+    border: 0;
+    width: 110px;
+    height: 30px;
+    background-color: #6D659B;
+    color: #fff;
+}
+
+.create-new-account {
+    display: block;
+    width: 450px;
+    text-align: center;
+}
+
+.create-new-account a {
+    font-size: 21px;
+}*/

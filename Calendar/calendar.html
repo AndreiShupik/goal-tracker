@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendar.css">
+    <title>Пример 18 - Календарь</title>
+</head>
+
+<div class="title">Calendar</div>
+
+<body>
+    <div class="container"></div>
+
+    <script>
+        function createCalendar(elem, year, month) {
+            elem = document.querySelector(elem)
+
+            let mon = month - 1
+            let date = new Date(year, mon)
+
+            let table = `
+<table>
+<caption>${month}.${year}</caption>
+<tr>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+</tr>
+<tr>`
+            for (let i = 0; i < getDay(date); i++) {
+                table += '<td></td>'
+            }
+
+            while (date.getMonth() == mon) {
+                table += '<td><a href="">' + date.getDate() + '</a></td>'
+                if (getDay(date) % 7 == 6) {
+                    table += '</tr><tr>'
+                }
+                date.setDate(date.getDate() + 1)
+            }
+            if (getDay(date) != 0) {
+                for (let i = getDay(date); i < 7; i++) {
+                    table += '<td></td>'
+                }
+            }
+            table += '</tr></table>'
+            elem.insertAdjacentHTML('beforeend', table)
+        }
+
+        function getDay(date) {
+            let day = date.getDay()
+            if (day == 0) day = 7
+            return day - 1
+        }
+
+        for (let month = 1; month <= 12; month++) {
+            createCalendar('.container', 2021, month)
+        }
+    </script>
+</body>
+
+</html>

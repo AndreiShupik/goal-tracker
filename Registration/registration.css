@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root {
+    --languid-lavender: #e5d4edff;
+    --violet-blue-crayola: #6d72c3ff;
+    --plump-purple: #5941a9ff;
+    --dark-liver: #514f59ff;
+    --dark-purple: #1d1128ff;
+}
+
+body {
+    font-family: Roboto;
+    max-width: 1440;
+    min-height: 1024;
+    background-color: #E5D4ED;
+}
+
+h1 {
+    color: #6D72C3;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*font-size: 72;*/
+    margin: 84px 0px 70px 85px;
+}
+
+form {
+    max-width: 340px;
+    margin: 0px auto 15px auto;
+    /*text-align: center;*/
+}
+
+form .form__name {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form__name .form__name__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+form .form__email .form__email__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+form .form__password .form__password__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+form .form__passwordRepeat .form__passwordRepeat__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+form .form__passwordRepeaet .form__passwordRepeat__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.error {
+    display: block;
+    max-width: 225px;
+    margin: 0px auto 5px 115px;
+    color: #fd101d;
+    text-align: left;
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    color: #6d72c3;
+    font-size: 20px;
+}
+
+input {
+    background-color: #E5C8EC;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 190px;
+    font-size: 17px;
+    padding-left: 35px;
+    color: #6D659B;
+}
+
+.form__name__container__icon {
+    top: 2px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 10px;
+    background: url(../icons/user1.svg) 0px 0px no-repeat;
+}
+
+.form__email__container__icon {
+    top: 2px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 10px;
+    background: url(../icons/Group.svg) 0px 0px no-repeat;
+}
+
+.form__password__container__icon {
+    top: 2px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 10px;
+    background: url(../icons/lock1.svg) 0px 0px no-repeat;
+}
+
+.form__passwordRepeat__container__icon {
+    top: 2px;
+    left: 110px;
+    position: absolute;
+    width: 31px;
+    height: 34px;
+    margin: 10px;
+    background: url(../icons/lock1.svg) 0px 0px no-repeat;
+}
+
+.submit {
+    display: block;
+    text-align: center;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.submit button {
+    padding: 0;
+    border: 0;
+    width: 130px;
+    height: 30px;
+    background-color: #6D659B;
+    color: #fff;
+}
+
+
+/*.create-new-account {
+    display: block;
+    width: 450px;
+    text-align: center;
+}
+
+.create-new-account a {
+    font-size: 21px;
+}*/
+
+
+/*form {
+    max-width: 230px;
+    margin: 0px auto 15px auto;
+    text-align: center;
+}
+
+.error {
+    color: #fd101d;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+input {
+    background-color: #E5C8EC;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 225px;
+    padding-left: 7px;
+    color: #6D659B;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    width: 145px;
+    height: 30px;
+    background-color: #6D659B;
+    margin-top: 15px;
+    color: #fff;
+}*/

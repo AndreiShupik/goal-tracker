@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registration.css">
+    <title>Registrtation</title>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <!--<form>
+        <div class="error">Such name exists</div>
+        <label for="name"></label>
+        <input type="text" name="name" id="name">
+
+        <div class="error">Invalid email</div>
+        <label for="email"></label>
+        <input type="text" name="email" id="email">
+
+        <div class="error">Invalid password</div>
+        <label for="password"></label>
+        <input type="password" name="password" id="password">
+
+        <div class="error">Password doesn't match</div>
+        <label for="password"></label>
+        <input type="password" name="password-check" id="paswword">
+
+        <button class="submit">Create new account</button>
+    </form>-->
+    <form id="form" action="/" method="GET">
+        <div class="form__name">
+            <div class="form__name__container">
+                <label for="name">Name</label>
+                <i class="form__name__container__icon"></i><input type="text" name="name" id="name">
+            </div>
+        </div>
+
+        <div class="form__email">
+            <div class="form__email__container">
+                <label for="email">Email</label>
+                <i class="form__email__container__icon"></i><input type="email" name="email" id="email">
+            </div>
+        </div>
+
+        <div class="form__password">
+            <div class="form__password__container">
+                <label for="password">Password</label>
+                <i class="form__password__container__icon"></i><input type="password" name="password" id="password">
+            </div>
+        </div>
+
+        <div class="form__passwordRepeat">
+            <div class="form__passwordRepeat__container">
+                <label for="passwordRepeat">Repeat password</label>
+                <i class="form__passwordRepeat__container__icon"></i><input type="password" name="passwordRepeat" id="passwordRepeat">
+            </div>
+        </div>
+
+        <div class="submit">
+            <button type="submit">Create new account</button>
+        </div>
+    </form>
+    <script src="registration.js"></script>
+</body>
+
+</html>

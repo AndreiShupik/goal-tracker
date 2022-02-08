@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./goals.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sport & health</h1>
+
+    <ul class="goals-list">
+        <!------------------------sat a goal--------------------------------->
+        <div class="set-a-goal_compare">
+            <input type="text" name=""><button type="submit">Set a goal</button>
+        </div>
+        <p>Done</p>
+        <p>Improve the sphere</p>
+        <!------------------------------------------------------------------->
+
+        <!------------------------Goals list--------------------------------->
+        <li class="goals-list_1">
+            <a href="">Do sport three times per week</a>
+            <span>+</span>
+            <hr class="line"></hr>
+            <!------------------------Goal description----------------------->
+            <div class="goals-list_1_description">
+                <div class="goals-list_1_description_top">
+                    <label for="measurement">Measurement</label>
+                    <label for="status ">Status</label>
+                    <label for="rate ">Rate</label>
+                    <label for="current-value">Current value</label>
+                    <label for="checking">Checking every (days)</label>
+
+                    <select id="measurement" name="measurement">
+                        <option value="Regular">Regular</option>
+                        <option value="Percent%">Percent %</option>
+                        <option value="Numbers">Numbers</option>
+                    </select>
+
+
+                    <select id="status" name="status">
+                        <option value="Active">Active</option>
+                        <option value="Passive">Passive</option>
+                    </select>
+
+
+                    <input type="number" name="rate" id="rate" placeholder="3" min="1">
+
+                    <div class="current-value">
+                        <span class="circle-ok"></span>
+                        <p>2/3</p>
+                    </div>
+                    <div class="checking-data">
+                        <input type="number" name="checking" id="checking" placeholder="7" min="1" max="365">
+                        <!--<p class="error">Enter correct data</p>-->
+                    </div>
+                </div>
+                <div class="improve">
+                    <label for="improve-the-sphere">Improve the sphere (%)</label>
+                    <input type="number" name="improve-the-sphere" id="improve-the-sphere" placeholder="10" min="1" max="100">
+                </div>
+                <div class="goals-list_1_description_bottom">
+                    <div class="schedule">
+                        <a href="">Schedule an action</a>
+                    </div>
+                    <div class="goal-done">
+                        <p>Goal done on</p>
+                        <p>66.6%</p>
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------->
+        </li>
+        <div class="done">
+            <img src="../icons/rotate.svg" alt="">
+        </div>
+        <p>6.6 (10%)</p>
+        <li class="goals-list_2">
+            <a href="">Have healthy toth</a>
+            <span>+</span>
+            <hr class="line"></hr>
+        </li>
+        <p>4 / 5</p>
+        <p>8 (10%)</p>
+        <li class="goals-list_3">
+            <a href="">Get rid of back pain</a>
+            <span>+</span>
+            <hr class="line"></hr>
+        </li>
+        <p>77%</p>
+        <p>7.7 (10%)</p>
+        <!------------------------------------------------------------------->
+    </ul>
+
+
+</body>
+
+</html>

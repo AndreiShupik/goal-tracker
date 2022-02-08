@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root {
+    --languid-lavender: #e5d4edff;
+    --violet-blue-crayola: #6d72c3ff;
+    --plump-purple: #5941a9ff;
+    --dark-liver: #514f59ff;
+    --dark-purple: #1d1128ff;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    font-family: Roboto;
+    max-width: 1440;
+    min-height: 1024;
+    background-color: #E5D4ED;
+}
+
+h1 {
+    color: #6D72C3;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*font-size: 72;*/
+    margin: 84px 0px 70px 85px;
+}
+
+
+/*Day list---------------------------------------------------------------*/
+
+ul {
+    max-width: 800px;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    position: relative;
+    background: #DCBBE4;
+    height: 31px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+a {
+    display: block;
+    height: 100%;
+    color: #6D72C3;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.failed-action,
+.successful-action {
+    background: #dfcce3;
+}
+
+.failed-action_text {
+    color: #EB8F94;
+    font-weight: 700;
+}
+
+.succesfull-action_text {
+    color: #468E45;
+    font-weight: 700;
+}
+
+.action-check {
+    width: 80px;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: end;
+}
+
+.action-check .action-check_successful {
+    width: 35px;
+    height: 100%;
+    position: relative;
+    background: #D8A9E3;
+}
+
+.action-check .action-check_successful span {
+    top: -1px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    background: url('../icons/circle-ok.svg') no-repeat left 0 top 0;
+}
+
+.action-check .action-check_failed {
+    margin-left: 5px;
+    width: 35px;
+    height: 100%;
+    position: relative;
+    background: #D8A9E3;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.action-check .action-check_failed span {
+    top: -5px;
+    left: 9px;
+    font-size: 35px;
+    position: absolute;
+    font-weight: 700;
+    color: red;
+    transform: rotate( 45deg);
+    cursor: pointer;
+}
+
+.progress {
+    font-weight: 700;
+}
+
+
+/*Create action-----------------------------------------------------------*/
+
+.create-action {
+    background: #601385;
+    font-size: 17px;
+    z-index: 1;
+    width: 375px;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    text-align: start;
+}
+
+.create-action .create-action_top {
+    display: flex;
+    justify-content: space-between;
+    color: #6d72c3;
+}
+
+.create-action .create-action_top .create-action_top_name input {
+    width: 150px;
+    background: #bfc3fe;
+}
+
+.create-action .create-action_top .create-action_top_name input::placeholder {
+    color: black;
+    border: none;
+}
+
+.create-action .create-action_top .create-action_top_goal {
+    width: 171px;
+}
+
+.create-action .create-action_top .create-action_top_goal select {
+    width: 170px;
+    background: #bfc3fe;
+    border: none;
+}
+
+.create-action .action-rate {
+    color: #878eff;
+    margin: 10px 5px;
+}
+
+.create-action .action-rate span {
+    padding-left: 10px;
+}
+
+.action-value {
+    margin: 10px 5px;
+}
+
+.action-value label {
+    color: #878eff;
+    margin-right: 5px;
+}
+
+.action-time {
+    text-decoration: underline;
+    margin-right: 0px;
+}
+
+.action-value input {
+    width: 43px;
+    background: #bfc3fe;
+    border: none;
+}
+
+.action-value input::placeholder {
+    color: black;
+}
+
+.create-action .action-time {
+    color: #878eff;
+    margin: 10px 5px;
+}
+
+.create-action .action-time select {
+    background: #bfc3fe;
+    border: none;
+}
+
+.create-action .create-action_button {
+    position: absolute;
+    top: 84px;
+    left: 280px;
+}
+
+.create-action .create-action_button button {
+    width: 76px;
+    height: 30px;
+    background: #2028fe;
+    font-size: 10px;
+    color: #fff;
+}

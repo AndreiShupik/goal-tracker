@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="schedule.css">
+    <title>Пример 18 - Календарь</title>
+</head>
+
+<div class="title">Schedule</div>
+
+<body>
+    <div class="container"></div>
+    <div class="create-action">
+        <div class="create-action_top">
+            <div class="create-action_top_name">
+                <input type="text" name="action-name" id="action-name" placeholder="Goal">
+            </div>
+            <div class="create-action_top_goal">
+                <label for="create-action_top_goal"></label>
+                <select name="create-action_top_goal" id="create-action_top_goal">
+                    <option value="Do-spor-three-times-per-week">Do sport three times per week</option>
+                    <option value="Have-healthy-tooth">Have healthy tooth</option>
+                    <option value="Get-rid-of-back-pain">Get rid of back pain</option>
+                </select>
+            </div>
+        </div>
+        <div class="action-rate">Rate<span>3</span></div>
+        <div class="action-value"><label for="action-value">Action value</label><input type="number" name="action-value" action-value id="action-value" placeholder="1" min="1"></div>
+        <div class="action-time">
+            <label for="ation-time">Time</label>
+            <select name="ation-time" id="">
+                <option value="00:00">00:00</option>
+                <option value="01:00">01:00</option>
+                <option value="02:00">02:00</option>
+                <option value="03:00">03:00</option>
+                <option value="04:00">04:00</option>
+                <option value="05:00">05:00</option>
+                <option value="06:00">06:00</option>
+                <option value="07:00">07:00</option>
+                <option value="09:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+                <option value="23:00">23:00</option>
+            </select>
+        </div>
+        <div class="create-action_button"><button>Create action</button></div>
+    </div>
+    <script src="schedule.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root {
+    --languid-lavender: #e5d4edff;
+    --violet-blue-crayola: #6d72c3ff;
+    --plump-purple: #5941a9ff;
+    --dark-liver: #514f59ff;
+    --dark-purple: #1d1128ff;
+}
+
+body {
+    font-family: Roboto;
+    max-width: 1440;
+    min-height: 1024;
+    background-color: #E5D4ED;
+}
+
+.title {
+    color: #6D72C3;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 84px 0px 20px 85px;
+    font-size: 60px;
+}
+
+caption {
+    background: #632f6f;
+    font-weight: 700;
+    height: 45px;
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(252px, auto));
+    max-width: 1100px;
+    align-items: start;
+    gap: 5px;
+    margin-left: 85px;
+}
+
+table {
+    height: 450px;
+    text-align: center;
+    background: #DCBBE4;
+    color: #6D72C3;
+    border-collapse: collapse;
+}
+
+tr a {
+    text-decoration: none;
+    color: #6D72C3;
+}
+
+td {
+    position: relative;
+    border: 2px solid #E5D4ED;
+    font-size: 25px;
+    padding: 5px 5px 0px 0px;
+    text-align: end;
+    vertical-align: baseline;
+}
+
+td a {
+    display: block;
+    max-width: 10px;
+    float: left;
+}
+
+th {
+    background: #601385;
+    font-size: 25px;
+    border: 2px solid #E5D4ED;
+}
+
+.task {
+    font-size: 15px;
+    margin-bottom: 2px;
+    background: #D8A9E3;
+    text-align: start;
+}
+
+button {
+    font-size: 10px;
+    width: 55px;
+    color: wheat;
+    background: #632F6F;
+    margin-bottom: 5px;
+}
+
+
+/*Create action-----------------------------------------------------------*/
+
+.create-action {
+    background: #601385;
+    font-size: 17px;
+    z-index: 1;
+    width: 375px;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    text-align: start;
+}
+
+.create-action .create-action_top {
+    display: flex;
+    justify-content: space-between;
+    color: #6d72c3;
+}
+
+.create-action .create-action_top .create-action_top_name input {
+    width: 150px;
+    background: #bfc3fe;
+}
+
+.create-action .create-action_top .create-action_top_name input::placeholder {
+    color: black;
+    border: none;
+}
+
+.create-action .create-action_top .create-action_top_goal {
+    width: 171px;
+}
+
+.create-action .create-action_top .create-action_top_goal select {
+    width: 170px;
+    background: #bfc3fe;
+    border: none;
+}
+
+.create-action .action-rate {
+    color: #878eff;
+    margin: 10px 5px;
+}
+
+.create-action .action-rate span {
+    padding-left: 10px;
+}
+
+.action-value {
+    margin: 10px 5px;
+}
+
+.action-value label {
+    color: #878eff;
+    margin-right: 5px;
+}
+
+.action-value input {
+    width: 43px;
+    background: #bfc3fe;
+    border: none;
+}
+
+.action-value input::placeholder {
+    color: black;
+}
+
+.create-action .action-time {
+    color: #878eff;
+    margin: 10px 5px;
+}
+
+.create-action .action-time select {
+    background: #bfc3fe;
+    border: none;
+}
+
+.create-action .create-action_button {
+    position: absolute;
+    top: 84px;
+    left: 280px;
+}
+
+.create-action .create-action_button button {
+    width: 76px;
+    height: 30px;
+    background: #2028fe;
+    font-size: 10px;
+    color: #fff;
+}

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root {
+    --languid-lavender: #e5d4edff;
+    --violet-blue-crayola: #6d72c3ff;
+    --plump-purple: #5941a9ff;
+    --dark-liver: #514f59ff;
+    --dark-purple: #1d1128ff;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    font-family: Roboto;
+    max-width: 1440;
+    min-height: 1024;
+    background-color: #E5D4ED;
+}
+
+h1 {
+    color: #6D72C3;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*font-size: 72;*/
+    margin: 84px 0px 70px 85px;
+}
+
+
+/*Set a goal--------------------------------------------------------------*/
+
+.goals-list .set-a-goal_compare input {
+    width: 535px;
+    height: 40px;
+    left: 88px;
+    top: 174px;
+    background: #E5C8EC;
+    border: none;
+    font-size: 18px;
+    color: #6D72C3;
+    padding-left: 5px;
+}
+
+.goals-list .set-a-goal_compare button {
+    width: 120px;
+    height: 40px;
+    background-color: #D8A9E3;
+    border-radius: 0px;
+    color: #6D72C3;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.goals-list p {
+    color: #6D72C3;
+    font-weight: 700;
+    font-size: 25px;
+    width: 120px;
+    text-align: center;
+    margin: 0px;
+}
+
+
+/*List------------------------------------------------------------------*/
+
+.goals-list {
+    list-style: none;
+    max-width: 1100px;
+    padding: 0px;
+    margin-left: 84px;
+    display: grid;
+    grid-template-columns: 66% 15% 19%;
+    align-items: self-start;
+}
+
+.goals-list li {
+    position: relative;
+}
+
+.goals-list li .line {
+    border: none;
+    max-width: 660px;
+    height: 2px;
+    background-color: #CCCFF9;
+    margin-bottom: 5px;
+}
+
+.goals-list li span {
+    position: absolute;
+    top: -25%;
+    right: 9%;
+    color: #6D659B;
+    font-size: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.goals-list .goals-list_1 span {
+    top: -10px;
+}
+
+.goals-list li a {
+    color: #6D72C3;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.goals-list .done img {
+    width: 50px;
+    height: 50px;
+    padding-left: 33px;
+    margin-top: -7px;
+}
+
+
+/*Description------------------------------------------------------------------*/
+
+.goals-list_1_description {
+    background: #DCBBE4;
+    max-width: 660px;
+}
+
+.goals-list_1_description_top {
+    display: grid;
+    grid-template-columns: 20% 12% 10% 15% 15%;
+    column-gap: 10px;
+    align-items: center;
+    row-gap: 0px;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.goals-list_1_description_top label {
+    color: #6D72C3;
+    font-weight: 700;
+}
+
+select {
+    background: #E5C8EC;
+    color: #6D72C3;
+    margin: 0 auto;
+    border: none;
+}
+
+#measurement {
+    width: 90px;
+}
+
+#status {
+    width: 80px;
+}
+
+#rate {
+    width: 43px;
+    background: #E5C8EC;
+    color: #6D72C3;
+    margin: 0 auto;
+    border: none;
+}
+
+#rate::placeholder {
+    color: #6D72C3;
+}
+
+.current-value {
+    position: relative;
+    margin: 0 auto;
+}
+
+.current-value .circle-ok {
+    top: 0px;
+    right: 70px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('../icons/circle-ok.svg') no-repeat top 10px left 0;
+    transform: rotate(0deg);
+}
+
+.goals-list_1_description_top label:nth-child(5) {
+    width: 100px;
+    text-align: center;
+}
+
+.goals-list_1_description_top #checking {
+    width: 45px;
+    background: #E5C8EC;
+    color: #6D72C3;
+    margin: 0 auto;
+    border: none;
+}
+
+.goals-list_1_description_top #checking::placeholder {
+    color: #6D72C3;
+}
+
+.goals-list_1_description_top .checking-data .error {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fa313c;
+}
+
+.goals-list_1_description .improve {
+    color: #6D72C3;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px 0px 15px 15px;
+}
+
+.goals-list_1_description .improve input {
+    width: 43px;
+    margin-left: 20px;
+    background: #E5C8EC;
+    color: #6D72C3;
+    border: none;
+}
+
+.goals-list_1_description .improve input::placeholder {
+    color: #6D72C3;
+}
+
+.goals-list_1_description .schedule {
+    margin-left: 15px;
+}
+
+.goals-list_1_description .schedule a {
+    color: #6D659B;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.goals-list_1_description_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goals-list_1_description .goal-done {
+    display: flex;
+}
+
+.goals-list_1_description .goal-done p {
+    width: 149px;
+    transform: none;
+    font-size: 25px;
+    color: #696870;
+}
+
+.goals-list_1_description .goal-done span {
+    font-size: 25px;
+    color: #696870;
+    transform: none;
+}
